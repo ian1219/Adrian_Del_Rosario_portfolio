@@ -18,6 +18,10 @@ class IndexController extends Controller
     {
         return view('projects');
     }
+    public function experience()
+    {
+        return view('experience');
+    }
     public function apparel()
     {
         return view('websites.apparel-ideas');

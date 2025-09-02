@@ -1,31 +1,98 @@
 @include('layouts.header') 
 
+<section class="relative text-gray-700 body-font overflow-hidden">
+    
+  <!-- Decorative background shapes -->
+  <div class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60vw] h-[60vw] rounded-full bg-teal-600/5 blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-[40vw] h-[40vw] rounded-full bg-lime-400/10 blur-3xl"></div>
+  </div>
+
+  <div class="container mx-auto px-4 md:px-6 py-12">
+    <div class="text-center max-w-3xl mx-auto">
+      <span class="inline-flex items-center px-3 py-1 text-sm tracking-wider rounded-full bg-gradient-to-r from-stone-700 via-teal-700 to-lime-300 text-white shadow">ABOUT</span>
+      <h1 class="mt-4 text-4xl uppercase font-bold text-teal-700">Adrian D. <span class="text-pink-700">Del Rosario</span></h1>
+      <p class="mt-3 text-gray-600 dark:text-gray-400">Junior Full‑Stack / PHP Developer passionate about crafting clean, performant web experiences. I blend pragmatic engineering with thoughtful UI to turn ideas into reliable products.</p>
+      <!-- Role badges -->
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <span class="px-3 py-1 text-sm rounded-full bg-white/70 backdrop-blur border border-teal-200 text-teal-700">Full‑Stack</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-white/70 backdrop-blur border border-amber-200 text-amber-700">PHP Developer</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-white/70 backdrop-blur border border-sky-200 text-sky-700">Web Developer</span>
+      </div>
+    </div>
+  </div>
+  <!-- subtle divider -->
+  <div class="mx-auto max-w-5xl px-4 md:px-6">
+    <div class="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+  </div>
+</section>
+
 <div class="text-gray-600 body-font pt-12">
     <div class="container mx-auto flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 w-full mb-10 md:mb-0">
-            <h2 class="mb-4 text-4xl font-semibold text-slate-700 dark:text-gray-300">
+            <h2 class="mb-4 text-3xl md:text-4xl font-extrabold tracking-tight text-teal-700">
                 About
             </h2>
-            <p class="mb-10 text-base font-medium leading-7 text-slate-600 dark:text-gray-400">
-                I'm pleased to have you here. I'm Kaizen Rain, a dedicated full-stack Php developer on a quest 
-                to make digital dreams a reality. I find happiness in every line of code I write, whether it's 
-                creating smooth user experiences or delving into complicated coding issues. Let's take a trip 
-                through my world of web development, where creativity meets functionality and where innovation knows no bounds. 
-                Take a virtual seat and join me in exploring the amazing possibilities!
+            <p class="mb-6 text-base font-medium leading-7 text-slate-600 dark:text-gray-400">
+                I'm Adrian D. Del Rosario, a junior full-stack and PHP developer. I specialize in building 
+                <span class="font-semibold text-teal-700">REST API–driven applications</span> using Laravel and PHP OOP principles, 
+                applying proven <span class="font-semibold">design patterns</span> to ensure maintainability. 
+                My workflow includes using <span class="font-semibold">Postman</span> for API testing, 
+                <span class="font-semibold">Docker Desktop</span> for containerized environments, 
+                and modern front-end stacks such as <span class="font-semibold">React JS, Tailwind CSS, Material UI, and Bootstrap</span> 
+                to deliver responsive and engaging user experiences.
             </p>
-            <p class="mb-10 text-base font-medium leading-7 text-slate-600 dark:text-gray-400">
-               <span class="text-slate-700 text-lg font-bold">Degree </span> <br>
-                Bachelor of Science in Information Technology <br>
-                <span class="text-slate-700 text-lg font-bold">Studied at </span> <br>
-                <a href="https://dhvsu.edu.ph/" target="_blank" class="text-amber-600 underline"> ( Don Honorio State University )</a>
-            </p>
+      <p class="mb-10 text-base font-medium leading-7 text-slate-600 dark:text-gray-400">
+        <span class="text-slate-700 text-lg font-bold">Degree</span><br>
+        BS in Information Technology <br>
+        <span class="text-slate-700 text-lg font-bold">Studied at</span><br>
+        <a href="https://psau.edu.ph/" target="_blank" class="text-amber-600 underline">
+          Pampanga State Agricultural University
+        </a>
+      </p>
             
-            <div class="px-3 py-3 bg-slate-100 border border-gray-300 rounded-2xl shadow-lg">
+            <!-- Quick Facts -->
+            <div class="px-3 py-3 bg-slate-100 border border-gray-300 rounded-2xl shadow-lg mb-10">
+    <div class="flex items-center gap-2">
+        <span class="text-slate-700 text-lg font-bold">Quick Facts</span>
+        <span class="text-xs uppercase tracking-wide text-slate-500">(at a glance)</span>
+    </div>
+    <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <li class="flex items-center gap-3 p-3 rounded-xl">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-teal-50 text-teal-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l3 3"/></svg>
+            </span>
+            <div class="text-slate-700"><span class="font-semibold">Age:</span> 26 years old</div>
+        </li>
+        <li class="flex items-center gap-3 p-3 rounded-xl">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-amber-50 text-amber-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6l7 4-7 4-7-4 7-4zm0 8v4"/></svg>
+            </span>
+            <div class="text-slate-700"><span class="font-semibold">Hobby:</span> Playing basketball</div>
+        </li>
+        <li class="sm:col-span-2 flex items-center gap-3 p-3 rounded-xl">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-sky-50 text-sky-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11c1.657 0 3-1.567 3-3.5S13.657 4 12 4 9 5.567 9 7.5 10.343 11 12 11zm0 0c-4.418 0-8 2.239-8 5v2h16v-2c0-2.761-3.582-5-8-5z"/></svg>
+            </span>
+            <div class="text-slate-700"><span class="font-semibold">Current Location:</span> Modesto Street, Malate, Manila</div>
+        </li>
+        <li class="sm:col-span-2 flex items-center gap-3 p-3 rounded-xl">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-pink-50 text-pink-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6-4.686-6-10a6 6 0 1112 0c0 5.314-6 10-6 10z"/></svg>
+            </span>
+            <div class="text-slate-700"><span class="font-semibold">Originally from:</span> Sasmuan, Pampanga</div>
+        </li>
+    </ul>
+</div>
+
+            <!-- End Quick Facts -->
+            
+            <div class="px-3 py-3 bg-slate-100 border border-gray-300 rounded-2xl shadow-lg mb-10">
                 <span class="text-slate-700 px-6 ml-6 text-lg font-bold mb-4">Skills</span>
                 <div class="flex flex-wrap px-2 ml-6">
                     
     <!-- C++ toggle button -->
-    <button data-modal-target="static-modal" data-modal-toggle="static-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="static-modal" data-modal-toggle="static-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
             C++
     </button>
     <!-- C++ modal -->
@@ -79,7 +146,7 @@
     <!-- End of C++ modal -->
 
     <!-- Java toggle button -->
-    <button data-modal-target="java-modal" data-modal-toggle="java-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="java-modal" data-modal-toggle="java-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         Java
     </button>
     <!-- Java modal -->
@@ -132,7 +199,7 @@
     <!-- End of Java modal -->
 
     <!-- HTML5 toggle button -->
-    <button data-modal-target="html5-modal" data-modal-toggle="html5-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 font-medium bg-white hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="html5-modal" data-modal-toggle="html5-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 font-medium bg-white hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         HTML
     </button>
     <!-- HTML5 modal -->
@@ -188,7 +255,7 @@
     <!-- End of HTML5 modal -->
 
     <!-- CSS toggle button -->
-    <button data-modal-target="css-modal" data-modal-toggle="css-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="css-modal" data-modal-toggle="css-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         CSS
     </button>
     <!-- CSS modal -->
@@ -243,7 +310,7 @@
     <!-- End of CSS modal -->  
 
     <!-- MySQL toggle button -->
-    <button data-modal-target="mysql-modal" data-modal-toggle="mysql-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="mysql-modal" data-modal-toggle="mysql-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         MySQL
     </button>
     <!-- MySQL modal -->
@@ -301,7 +368,7 @@
     <!-- End of MySQL modal -->   
 
     <!-- PHP toggle button -->
-    <button data-modal-target="php-modal" data-modal-toggle="php-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="php-modal" data-modal-toggle="php-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         PHP
     </button>
     <!-- PHP modal -->
@@ -355,7 +422,7 @@
     <!-- End of PHP modal --> 
 
     <!-- JavaScript toggle button -->
-    <button data-modal-target="JavaScript-modal" data-modal-toggle="JavaScript-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="JavaScript-modal" data-modal-toggle="JavaScript-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         JavaScript
     </button>
     <!-- JavaScript modal -->
@@ -410,7 +477,7 @@
     <!-- End of JavaScript modal -->    
 
     <!-- Tailwind CSS toggle button -->
-    <button data-modal-target="tailwind-modal" data-modal-toggle="tailwind-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="tailwind-modal" data-modal-toggle="tailwind-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         Tailwind CSS
     </button>
     <!-- Tailwind CSS modal -->
@@ -467,7 +534,7 @@
     <!-- End of Tailwind CSS modal --> 
 
     <!-- mariaDB toggle button -->
-    <button data-modal-target="mariaDB-modal" data-modal-toggle="mariaDB-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="mariaDB-modal" data-modal-toggle="mariaDB-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         MariaDB
     </button>
     <!-- mariaDB modal -->
@@ -528,7 +595,7 @@
     <!-- End of mariaDB modal -->    
 
     <!-- Laravel toggle button -->
-    <button data-modal-target="laravel-modal" data-modal-toggle="laravel-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="laravel-modal" data-modal-toggle="laravel-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         Laravel
     </button>
     <!-- Laravel modal -->
@@ -582,7 +649,7 @@
     <!-- End of Laravel modal -->    
 
     <!-- WordPress toggle button -->
-    <button data-modal-target="wordpress-modal" data-modal-toggle="wordpress-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="wordpress-modal" data-modal-toggle="wordpress-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         WordPress
     </button>
     <!-- WordPress modal -->
@@ -633,7 +700,7 @@
     <!-- End of WordPress modal -->    
 
     <!-- Bootstrap toggle button -->
-    <button data-modal-target="bootstrap-modal" data-modal-toggle="bootstrap-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100" type="button">
+    <button data-modal-target="bootstrap-modal" data-modal-toggle="bootstrap-modal" class="px-5 py-2 mt-3 border border-gray-400 rounded-md ml-2 mr-2 bg-white font-medium hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-300" type="button">
         Bootstrap5
     </button>
     <!-- Bootstrap modal -->
@@ -694,7 +761,10 @@
                 <img class="object-cover object-center rounded w-full" alt="hero" src="{{ asset('img/skills-icon.png') }}">
             </div>
             <p class="mt-6 text-base font-medium text-left leading-7 text-slate-600 dark:text-gray-400">
-                I honed my skills at <a href="https://dhvsu.edu.ph/" target="_blank" class="text-amber-600 underline"> Don Honorio State University</a>, my beloved alma mater, where proficient professors and challenging projects played pivotal roles in shaping my capabilities. Dedicated sacrifices and unwavering hard work complemented this journey. Despite facing difficulties, I persevered in continuous study and practice, channeling these efforts into creating websites and tackling real-world projects.
+                I honed my craft at <a href="https://psau.edu.ph/" target="_blank" class="text-amber-600 underline">Pampanga State Agricultural University</a>, 
+                where I built a solid foundation in software development through hands-on projects and mentorship. 
+                This experience shaped my ability to deliver <span class="font-semibold text-teal-700">scalable, client-focused solutions</span> 
+                and instilled the discipline to ship high-quality software with confidence.
             </p>
         </div>
     </div>
@@ -793,7 +863,7 @@
         });
 
         // Add click event listener to hide the modals when clicking outside of them
-        document.addEventListener('click', function (event) {
+        document.addEventListener("click", function (event) {
             if (event.target.classList.contains('modal-overlay')) {
                 closeModal('static-modal');
                 closeModal('java-modal');

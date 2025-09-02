@@ -18,6 +18,8 @@ Route::get('/', [IndexController::class, 'index'])->name('index');
 
 Route::get('/about', [IndexController::class, 'about'])->name('about');
 
+Route::get('/experience', [IndexController::class, 'experience'])->name('experience');
+
 Route::get('/projects', [IndexController::class, 'projects'])->name('projects');
 
 Route::get('/capstone', [IndexController::class, 'capstone'])->name('capstone');

@@ -3,9 +3,10 @@
 
 <div class="flex justify-center items-center mt-10">
     <div class="md:w-1/2 w-full mb-10 md:mb-0 flex flex-col items-center">
-        <h2 class="mb-4 text-4xl uppercase font-bold text-gray-600 dark:text-gray-300">
-            Capstone Title:
-        </h2>
+      <span class="inline-flex items-center px-3 py-1 text-sm tracking-wider rounded-full bg-gradient-to-r from-stone-700 via-teal-700 to-lime-300 text-white shadow">CAPSTONE  </span>
+
+      <h2 class="mt-4 text-4xl uppercase font-bold text-teal-700">Capstone <span class="text-pink-700">Title:</span></h2>
+
         <h2 class="mb-10 text-3xl font-bold leading-7 text-gray-700 dark:text-gray-400 uppercase text-center">
             Water level and flood alert notifier for the municipality of macabebe, pampanga.
         </h2>
@@ -29,7 +30,7 @@
                 <br class="hidden lg:inline-block">
                 Presented to the Faculty of the <br class="hidden lg:inline-block">
                 <span class="text-cyan-600"> College of Computing Studies </span> <br class="hidden lg:inline-block">
-                <span class="text-amber-600"> Don Honorio Ventura State University </span> <br class="hidden lg:inline-block">
+                <span class="text-amber-600"> Pampanga State Agricultural University </span> <br class="hidden lg:inline-block">
                 Bacolor, Pampanga
             </h1>
             <h1 class="title-font sm:text-3xl text-2xl py-4 mb-4 text-left font-bold text-gray-800 leading-tight">
