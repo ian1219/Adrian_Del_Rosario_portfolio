@@ -12,7 +12,7 @@ A personal portfolio built with Laravel 10, Vite, and Tailwind CSS.
 ## Quick Start (Local)
 1. Clone and enter the project directory
 ```bash
-git clone <repo-url>
+git clone https://github.com/ian1219/Adrian_Del_Rosario_portfolio.git
 cd Adrian_Del_Rosario_portfolio
 ```
 2. Install PHP dependencies
